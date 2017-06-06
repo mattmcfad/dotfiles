@@ -43,14 +43,15 @@
         - terminal 2:
             -  `mongo`
             -  `use whatever-local`
-            - ```
+            -  ```
                 db.createUser(
                     {
                         user: "dev",
                         pwd: "abcd1234",
                         roles: [ { role: "userAdminAnyDatabase", db: "admin" },{role: "readWrite", db: "whatever-local"} ]
                     }
-                ) ```
+                )
+                ```
         ##### restart locally with auth
         - terminal 1:
             - `mongod --auth --port 27017 --dbpath /data/db`
