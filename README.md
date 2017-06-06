@@ -2,14 +2,13 @@
 
 # install
 
-- [iterm](https://www.iterm2.com/downloads.html)
-- [brew](https://brew.sh/)
+- ### [iterm](https://www.iterm2.com/downloads.html)
+- ### [brew](https://brew.sh/)
 - ### git 
     - `brew install git`
     - `git config --global user.name "mattmcfad"`
     - `git config --global user.email "mmcfadyen91@gmail.com"`
-
-- [generate ssh key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
+    - [generate ssh key](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/)
     - add to github
 - ### fish
     - `brew install fish`
