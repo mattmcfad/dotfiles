@@ -30,6 +30,11 @@
     - `nvm install v6`
     - `nvm install v7`
     - `nvm install v8`
+- ### mongo
+    - `brew install mongodb`
+    - `sudo mkdir -p /data/db`
+    - #### to start:
+        - `mongod` or `brew services start mongodb`
 
 - ### Xcode
     - App store
