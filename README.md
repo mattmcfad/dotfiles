@@ -2,6 +2,8 @@
 
 # install
 
+- ### Xcode
+    - App store
 - ### [iterm](https://www.iterm2.com/downloads.html)
 - ### [brew](https://brew.sh/)
 - ### git 
@@ -33,11 +35,35 @@
 - ### mongo
     - `brew install mongodb`
     - `sudo mkdir -p /data/db`
-    - #### to start:
-        - `mongod` or `brew services start mongodb`
+    - #### run locally:
+        ##### start server
+        - terminal 1:
+            - `mongod --port 27017 --dbpath /data/db`
+        ##### add db user
+        - terminal 2:
+            -  `mongo`
+            -  `use whatever-local`
+            - ```
+                db.createUser(
+                    {
+                        user: "dev",
+                        pwd: "abcd1234",
+                        roles: [ { role: "userAdminAnyDatabase", db: "admin" },{role: "readWrite", db: "whatever-local"} ]
+                    }
+                )
+            ```
 
-- ### Xcode
-    - App store
+        ##### restart locally with auth
+        - terminal 1:
+            - `mongod --auth --port 27017 --dbpath /data/db`
+        ##### test authentication
+        - terminal 2:
+            -  `mongo`
+            -  `use whatever-local`
+            - `db.auth("dev","abcd1234")`
+        ##### run in background:
+        - `brew services start mongodb`
+        - `brew services stop mongodb`
 
 - ### Caffeine
 - ### Spectacle
