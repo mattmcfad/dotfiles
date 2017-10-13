@@ -19,7 +19,7 @@
     - `git clone git@github.com:mattmcfad/oh-my-fish.git`
     - `cp oh-my-fish ~/.oh-my-fish`
     #### copy template of fish config into your config
-    - `cp ~/.oh-my-fish/templates/config.fish ~/.config/`
+    - `cp ~/.oh-my-fish/templates/config.fish ~/.config/fish/`
     - [install rvm:](https://rvm.io/rvm/install)
     - [install powerline:](https://powerline.readthedocs.org/en/master/installation/osx.html)
     - [install fonts:](https://github.com/powerline/fonts)
