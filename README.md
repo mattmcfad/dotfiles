@@ -6,6 +6,8 @@
     - App store
 - ### [iterm](https://www.iterm2.com/downloads.html)
 - ### [brew](https://brew.sh/)
+-  `defaults write com.apple.finder AppleShowAllFiles YES`
+- OPTION + right click finder -> relaunch
 - ### git 
     - `brew install git`
     - `git config --global user.name "mattmcfad"`
@@ -26,7 +28,7 @@
 
 - ### nvm
     - `touch ~/.bash_profile`
-    - `curl -o- `https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+    - `curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash`
     - `cd ~/.config/fish`
     - `git clone git://github.com/passcod/nvm-fish-wrapper.git nvm-wrapper`
     - `nvm install v6`
