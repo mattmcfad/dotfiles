@@ -27,6 +27,8 @@
     - `chsh -s /usr/local/bin/fish`
   - Install oh-my-fish
     - `curl -L https://get.oh-my.fish | fish`
+  - Install RVM
+    - `curl -L https://get.rvm.io | bash -s stable`
   - Install omf packages
     - `omf install nvm`
     - `omf install rvm`
